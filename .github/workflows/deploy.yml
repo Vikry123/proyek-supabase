@@ -18,6 +18,6 @@ jobs:
           version: latest
 
       - name: Deploy Supabase Database Migrations
-        run: supabase db push --password ${{ secrets.SUPABASE_DB_PASSWORD }}
+        run: - run: supabase db push --project-id ${{ secrets.SUPABASE_PROJECT_ID }} --password ${{ secrets.SUPABASE_DB_PASSWORD }}
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}

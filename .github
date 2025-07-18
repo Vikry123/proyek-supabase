@@ -1,5 +1,5 @@
 name: Deploy Supabase Migrations
-
+# branch main
 on:
   push:
     branches:

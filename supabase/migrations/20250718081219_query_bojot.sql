@@ -1,0 +1,1 @@
+ALTER SCHEMA "Raw" RENAME TO raw;
